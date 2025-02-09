@@ -4,11 +4,11 @@
 `pg-backup-orchestrator` is an automated **PostgreSQL backup & restore** tool using **Airflow, Python, and WAL-G**. It facilitates seamless database backups and restorations, supporting **small to large databases** while ensuring reliability and error handling.
 
 ## Features
-- 🔹 **Automated Backup & Restore**: Uses **WAL-G** for efficient PostgreSQL backups.
-- 🔹 **Airflow Orchestration**: Manages the backup workflow with retries and logging.
-- 🔹 **Dockerized Setup**: Easily deploy using **Docker & Docker Compose**.
-- 🔹 **Error Handling & Rollback**: Ensures data consistency in case of failures.
-- 🔹 **Supports External Databases**: Works with databases outside of Docker.
+-  **Automated Backup & Restore**: Uses **WAL-G** for efficient PostgreSQL backups.
+-  **Airflow Orchestration**: Manages the backup workflow with retries and logging.
+-  **Dockerized Setup**: Easily deploy using **Docker & Docker Compose**.
+-  **Error Handling & Rollback**: Ensures data consistency in case of failures.
+-  **Supports External Databases**: Works with databases outside of Docker.
 
 ## Tech Stack
 - **Python** (for scripting and automation)
