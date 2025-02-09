@@ -1,0 +1,18 @@
+services:
+  airflow:
+    build: .
+    environment:
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./dags:/opt/airflow/dags  # DAGs directory
+      - ./dbBackup:/dbBackup      # Local backup directory
+    networks:
+      - external_db_net
+    command: ["airflow", "standalone"]
+
+networks:
+  external_db_net:
+    external: true  # Assumes an existing Docker network to access external DBs
