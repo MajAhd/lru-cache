@@ -23,6 +23,18 @@ git clone https://github.com/yourusername/pg-backup-orchestrator.git
 cd pg-backup-orchestrator
 ```
 
+### Apache Airflow
+
+```sh
+# initial Airflow
+docker-compose up airflow-init
+        
+# Run Airflow        
+docker-compose up
+```
+open http://localhost:8080
+
+### [More Info to setup Airflow and Docker](https://airflow.apache.org/docs/apache-airflow/2.1.1/start/docker.html) 
 ### 2️⃣ Create a Docker Network (if needed)
 ```bash
 docker network create external_db_net
